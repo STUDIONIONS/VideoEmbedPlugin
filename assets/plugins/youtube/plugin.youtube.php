@@ -80,7 +80,6 @@ if(!function_exists("youtube_replacer")) {
 		
 		**
 		**
-		
 		MATCH 2
 		1.	[64-174]	`{youtube}https://www.youtube.com/watch?v=0Nv-yFuT-BQ&list=PLfpYsuT2dXbzcDEvD7e8qApvGNvtpf1Fq&index=2{/youtube}`
 		2.	[64-73]	`{youtube}`
@@ -111,6 +110,14 @@ switch ($e->name) {
 		$outputPrepare = $modx->documentOutput;
 		$re = "@((\{youtube\})(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|playlist\?|watch\?v=|watch\?.+(?:&|&#38;|&amp;);v=))([a-zA-Z0-9\-_]{11})?(?:(?:\?|&|&#38;|&amp;)?list=([a-zA-Z\-_0-9]{34}))?(?:\S+)?(\{\/youtube\}))@i";
 		$outputPrepare = preg_replace_callback($re, 'youtube_replacer', $outputPrepare);
+		/**
+		*** Добавить поддержку других серверов видео
+		*** (ProjectSoft)
+		**/
+		
+		/**
+		*** Очищаем
+		**/
 		$reclean = "@((\{youtube\})(.+)(\{\/youtube\}))@i";
 		$outputPrepare = preg_replace_callback($reclean, 'youtube_clear', $outputPrepare);
 		$modx->documentOutput = $outputPrepare;

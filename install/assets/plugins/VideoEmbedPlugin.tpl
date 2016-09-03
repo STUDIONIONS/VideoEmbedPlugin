@@ -1,7 +1,7 @@
 //author ProjectSoft (projectsoft2009@yandex.ru)
 /**
- * YoutubeModxEvo
- * YoutubeModxEvo plugin for MODX Evo
+ * VideoEmbedPlugin
+ * VideoEmbedPlugin plugin for MODX Evo
  *
  *
  * @category	plugin 
@@ -10,10 +10,10 @@
  * @internal	@properties 
  * @internal	@events OnWebPagePrerender 
  * @internal	@modx_category Content 
- * @internal	@legacy_names YoutubeModxEvo
+ * @internal	@legacy_names VideoEmbedPlugin
  * @internal	@installset base
  * @author		ProjectSoft (projectsoft2009@yandex.ru)
 */
 //author ProjectSoft (projectsoft2009@yandex.ru)
 
-require MODX_BASE_PATH.'assets/plugins/youtube/plugin.youtube.php';
+require MODX_BASE_PATH.'assets/plugins/videoembed/plugin.videoembed.php';

@@ -1,2 +1,2 @@
-# YoutubePlugin
-YoutubePlugin for Modx Evo
+# VideoEmbedPlugin
+VideoEmbedPlugin for Modx Evo

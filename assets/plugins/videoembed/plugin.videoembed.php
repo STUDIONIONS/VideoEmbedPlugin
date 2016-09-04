@@ -136,10 +136,6 @@ switch ($e->name) {
 		*/
 		$re = "@((\{youtube\})(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|playlist\?|watch\?v=|watch\?.+(?:&|&#38;|&amp;);v=))([a-zA-Z0-9\-_]{11})?(?:(?:\?|&|&#38;|&amp;)?list=([a-zA-Z\-_0-9]{34}))?(?:\S+)?(\{\/youtube\}))@i";
 		$outputPrepare = preg_replace_callback($re, 'youtube_replacer', $outputPrepare);
-		/**
-		*** Добавить поддержку других серверов видео
-		*** (ProjectSoft)
-		**/
 		/*
 		-- Vimeo
 		*/

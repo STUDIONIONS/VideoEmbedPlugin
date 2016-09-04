@@ -1,4 +1,4 @@
-//author ProjectSoft (projectsoft2009@yandex.ru)
+//<?php
 /**
  * VideoEmbedPlugin
  * VideoEmbedPlugin plugin for MODX Evo
